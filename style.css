@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --fonte4: Open Sans, roboto;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    }
+.vd{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vd iframe{
+    width: 400%;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+/* iframe {
+    margin-left: 100px;
+    margin-bottom: 100px;
+} */
+
+svg {
+    margin-bottom: -10px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: var(--fonte4);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte4);
+    font-size: 10vw;
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+headera, footer a {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte4);
+    font-size: 3.5vw;
+}
+
+.text p {
+    padding-bottom: 2em;
+}
+
+.text {
+    background-color: black;
+    color: white;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+@media (min-width: 425px) {
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
+        font-family: var(--fonte4);
+        font-size: 1.5vw;
+    }
+
+    /* iframe {
+        width: 90px;
+    } */
+}
+ @media (max-width: 990px){
+   .vd{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .vd iframe{
+    width: 300%;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+   }
+}
