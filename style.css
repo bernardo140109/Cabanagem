@@ -2,13 +2,34 @@
 
 :root {
     --fonte4: Open Sans, roboto;
+    --bc-font:1.0em;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
+    font-size: var(--bc-font);
     }
+    
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 25px;
+       }
+       .embed-container iframe, .embed-container object, .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       }
+       
 .vd{
     max-width: 100%;
     display: flex;
@@ -23,7 +44,13 @@
     margin-left: 70px;
     margin-right: 100px;
 }
+.titulo p{
+ font-size: 15px;
+}
 
+.titulo h1 {
+    font-size: 80px;
+}
 /* iframe {
     margin-left: 100px;
     margin-bottom: 100px;
@@ -49,10 +76,11 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte4);
-    font-size: 10vw;
+    font-size: var(--bc-font);
 }
 header > p {
     padding-bottom: 50px;
+    text-align: justify;
 }
 header a, footer a {
     color: white;
@@ -70,11 +98,12 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte4);
-    font-size: 3.5vw;
+    font-size: var(--bc-font);
 }
 
 .text p {
     padding-bottom: 2em;
+    font-size: 1em;
 }
 
 .text {
@@ -82,19 +111,12 @@ section {
     color: white;
 }
 
-section.imagem {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 15px
 
 }
 
@@ -108,24 +130,30 @@ footer{
         font-size: 1.5vw;
     }
 
-    /* iframe {
+}
+
+     iframe {
+        aspect-ratio: box;
         width: 90px;
-    } */
-}
- @media (max-width: 990px){
-   .vd{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .vd iframe{
-    width: 300%;
-    height: 300px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-   }
-}
+    }
+
+    @media (max-width: 370px){
+        /* .vd{
+         max-width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        .vd iframe{
+         width: 300%;
+         height: 300px;
+         border: 2px solid #fff;
+         border-radius: 20px;
+         margin-bottom: 20px;
+         margin-left: 0;
+         margin-right: 0;
+        }
+        header{
+         font-size: var(--bc-font);
+        } */
+    }
