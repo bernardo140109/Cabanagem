@@ -20,7 +20,7 @@
         height: auto;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-right: 25px;
+        margin-right: 60px;
        }
        .embed-container iframe, .embed-container object, .embed-container embed {
         position: absolute;
@@ -29,21 +29,7 @@
         width: 100%;
         height: 100%;
        }
-       
-.vd{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.vd iframe{
-    width: 400%;
-    height: 600px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 70px;
-    margin-right: 100px;
-}
+
 .titulo p{
  font-size: 15px;
 }
@@ -96,7 +82,7 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    margin-left: 25px;
     font-family: var(--fonte4);
     font-size: var(--bc-font);
 }
