@@ -29,6 +29,10 @@ p {
     margin-right: 20px;
     text-align: justify;
 }
+
+.nomes {
+    margin-left: 675px;
+}
 /* iframe {
     margin-left: 100px;
     margin-bottom: 100px;
@@ -57,6 +61,7 @@ header > h1 {
     font-size: var(--bc-font);
 }
 header > p {
+    margin-left: 15px;
     padding-bottom: 50px;
     text-align: justify;
 }
@@ -113,6 +118,18 @@ footer{
         max-width: 60%;
         max-height: 300px;
         margin-left: 80px;
+    }
+
+    .nomes {
+        margin-left: 125px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .text {
+        margin-left: 0px;
     }
 
 }
